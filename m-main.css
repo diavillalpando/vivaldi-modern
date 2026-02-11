@@ -1,0 +1,20 @@
+:root {
+    --edge-margin: 5px;
+    --inter-component-margin: 10px;
+}
+
+#header,
+#footer {
+    /* Remove styling for header and footer  */
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+/* ----------- Website View ----------- */
+#browser:not(.inner) #webpage-stack {
+    /* Note: This is only when not seeing full-screen content */
+    border-radius: var(--radius);
+    margin: var(--inter-component-margin);
+
+
+}

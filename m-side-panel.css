@@ -1,15 +1,3 @@
-:root {
-    --edge-margin: 5px;
-    --inter-component-margin: 10px;
-}
-
-/* ----------- Website View ----------- */
-#browser:not(.inner) #webpage-stack {
-    /* Note: This is only when not seeing full-screen content */
-    border-radius: var(--radius);
-    margin: var(--inter-component-margin);
-}
-
 /* -------- Side Panel--------  */
 #panels-container {
     /* Remove Background of default side panel  */
@@ -46,11 +34,3 @@
         }
     }
 }
-
-/* If Full-Screen Content (takes over whole screen)
-#browser.inner {
-    #webview-container { 
-        padding: 0 !important;
-    }
-} */
-

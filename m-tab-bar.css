@@ -1,0 +1,58 @@
+/* ----------- Tab Bar ----------- */
+.tabbar-wrapper {
+    /* Remove Background of default tab bar  */
+    background-color: transparent !important;
+
+    #tabs-tabbar-container {
+        /* Create Tab Bar Dock
+        - Make size of tools
+        - Make background Color
+        - Add Blur
+        - Add Radius
+        - Add Padding
+        */
+        background-color: var(--colorBgAlphaBlur) !important;
+        backdrop-filter: var(--backgroundBlur);
+        border-radius: var(--radius) !important;
+        padding: 5px;
+
+        /* Dynamic Margins */
+        &.top {
+            margin: var(--edge-margin);
+            margin-bottom: 0;
+        }
+
+        &.right {
+            margin-right: var(--edge-margin);
+            margin-top: var(--inter-component-margin);
+            margin-bottom: var(--inter-component-margin);
+        }
+
+        &.left {
+            margin-left: var(--edge-margin);
+            margin-top: var(--inter-component-margin);
+            margin-bottom: var(--inter-component-margin);
+        }
+
+        &.bottom {
+            margin: var(--edge-margin);
+            margin-top: 0;
+        }
+
+
+        #tabs-subcontainer {
+            background-color: rgba(0, 0, 0, 0.1) !important;
+            backdrop-filter: saturate(1.1);
+        }
+
+        .tab.active {
+            /* Make background Color of active tab accent color  */
+            background-color: var(--colorAccentBg) !important;
+        }
+
+        /* Remove Background of default button toolbar  */
+        .button-toolbar {
+            background-color: transparent !important;
+        }
+    }
+}
