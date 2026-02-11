@@ -39,6 +39,10 @@
             margin-top: 0;
         }
 
+        #tabs-container .resize{
+            /* Helps with Clipping issue with too many tabs */
+            flex: 1 1 90% !important;
+        }
 
         #tabs-subcontainer {
             background-color: rgba(0, 0, 0, 0.1) !important;
@@ -53,6 +57,11 @@
         /* Remove Background of default button toolbar  */
         .button-toolbar {
             background-color: transparent !important;
+        }
+
+        /* Removes Clipping error and moves new tab to bottom */
+        .toolbar-tabbar-after {
+            flex-wrap: wrap-reverse !important;
         }
     }
 }
