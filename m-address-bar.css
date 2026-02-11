@@ -17,6 +17,7 @@
 
     .toolbar-mainbar{
         height: auto !important;
+        min-height: auto !important;
 
     }
 }
@@ -35,5 +36,10 @@
     button {
         border-radius: var(--radius) !important;
     }
+
+}
+
+#browser.mac .window-buttongroup {
+    display: none !important;
 
 }
