@@ -33,4 +33,18 @@
             padding: 5px;
         }
     }
+
+    /* The Panel Windows Themselves */
+    .panel-group{
+        border-radius: var(--radius) !important;
+        margin: var(--inter-component-margin);
+
+        .webpanel-header{
+            box-shadow: none !important;
+        }
+        .webpanel-content{
+            margin: var(--edge-margin) !important;
+            border-radius: var(--radius) !important;
+        }
+    }
 }
