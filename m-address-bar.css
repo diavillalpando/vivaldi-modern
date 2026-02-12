@@ -1,0 +1,46 @@
+
+
+.mainbar {
+    margin: 0 auto;
+    width: 60%;
+    background-color: var(--colorBgAlphaBlur) !important;
+    backdrop-filter: var(--backgroundBlur) !important;
+    border: none;
+    border-radius: var(--radius) !important;
+    padding-left: 5px;
+    padding-right: 5px;
+    z-index: 99;
+
+    .button-toolbar{
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+
+    .toolbar-mainbar{
+        height: auto !important;
+        min-height: auto !important;
+
+    }
+}
+
+#browser.address-top.disable-titlebar .mainbar {
+    margin-top: var(--edge-margin);
+}
+
+#browser.address-bottom .mainbar {
+    margin-bottom: var(--edge-margin);
+}
+
+#browser.win .window-buttongroup {
+    background-color: transparent !important;
+    
+    button {
+        border-radius: var(--radius) !important;
+    }
+
+}
+
+#browser.mac:not(.tabs-top) .window-buttongroup {
+    display: none !important;
+
+}

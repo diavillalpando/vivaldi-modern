@@ -1,0 +1,50 @@
+/* -------- Side Panel--------  */
+#panels-container {
+    /* Remove Background of default side panel  */
+    background-color: transparent !important;
+    border: 0 !important;
+
+    /* Add Spacing Appropriate to where Panel is */
+    &.right {
+        margin-right: var(--edge-margin);
+    }
+
+    &.left {
+        margin-left: var(--edge-margin);
+    }
+
+    #switch {
+        /* center Toolbar and remove blur for whole panel */
+        justify-content: center;
+        backdrop-filter: none !important;
+
+        &>div {
+            /* Create Panel Dock
+            - Make size of tools
+            - Make background Color
+            - Add Blur
+            - Add Radius
+            - Add Padding
+            */
+            flex: none !important;
+            background: var(--colorBgAlphaBlur);
+            backdrop-filter: var(--backgroundBlur);
+            border-radius: var(--radius) !important;
+            padding: 5px;
+        }
+    }
+
+    /* The Panel Windows Themselves */
+    .panel-group{
+        border-radius: var(--radius) !important;
+        margin: var(--inter-component-margin);
+
+        .webpanel-header{
+            box-shadow: none !important;
+        }
+        .webpanel-content{
+            margin: var(--edge-margin) !important;
+            border-radius: var(--radius) !important;
+        }
+    }
+}
